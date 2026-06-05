@@ -55,7 +55,11 @@ export default function UserLoginPage() {
         <button onClick={handleLogin} disabled={loading} style={styles.btn}>
           {loading ? "Memproses..." : "Masuk"}
         </button>
-
+        
+        <p style={{ textAlign: "center", color: "#9ca3af", fontSize: 12, marginTop: "16px" }}>
+  Belum punya akun? <a href="/user/register" style={{ color: "#fff", fontWeight: "600" }}>Daftar sekarang</a>
+</p>
+    
         <a href="/" style={styles.back}>← Kembali ke Beranda</a>
       </div>
     </div>
